@@ -49,7 +49,7 @@ function Clipboard() {
                     id="outlined-multiline-static"
                     label="Paste here"
                     multiline
-                    inputProps={{style:{padding: "7px 5px", width:'320px'}}}
+                    inputProps={{style:{padding: "7px 5px", width:'100%'}}}
                     rows={4}
                     style={{marginBottom:'10px'}}
                     placeholder="Paste here..."
