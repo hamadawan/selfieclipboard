@@ -36,7 +36,9 @@ function Clipboard() {
                     value={input}
                     onChange={(event)=>setInput(event.target.value)}
                     />
-                <IconButton onClick={()=>copyToClipboard(input)} style={{marginLeft:'10px'}} variant="outlined" color="inherit">
+                <IconButton 
+                    onClick={()=>copyToClipboard(input)} style={{marginLeft:'10px'}} 
+                    variant="outlined" color="primary">
                     <FileCopyIcon />
                     <p style={{fontSize:'12px', marginLeft:'7px'}}>Copy to clipboard</p>
                 </IconButton>

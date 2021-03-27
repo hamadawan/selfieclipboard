@@ -83,7 +83,7 @@ function Graph() {
                         <TextField
                             variant="outlined"
                             value={page}
-                            style={{height:'40px'}}
+                            style={{height:'40px',marginTop:'10px'}}
                             inputProps={{
                                style: {padding: "12px 7px"}
                             }}
@@ -96,6 +96,7 @@ function Graph() {
                             variant="outlined"
                             value={pageSize}
                             onChange={(event)=>setPageSize(event.target.value)} 
+                            style={{height:'40px',marginTop:'10px'}}
                             inputProps={{
                                 style: {padding: "12px 7px"}
                             }}
@@ -113,6 +114,7 @@ function Graph() {
                             KeyboardButtonProps={{
                                 'aria-label': 'change date',
                             }}
+                            style={{marginTop:'10px'}}
                         />
                         
                         <KeyboardDatePicker
@@ -127,8 +129,12 @@ function Graph() {
                             KeyboardButtonProps={{
                                 'aria-label': 'change date',
                             }}
+                            style={{marginTop:'10px'}}
                         />
-                        <Button  onClick={()=> handleSearch() } color="primary" variant="contained" color="primary" style={{height:'40px'}} > Search </Button>
+                        <Button 
+                            onClick={()=> handleSearch() } color="primary" variant="contained" color="primary" 
+                            style={{height:'40px', margin:"10px 0 o 15px"}} 
+                        > Search </Button>
                     </Grid>
                 </MuiPickersUtilsProvider>    
             </Paper>

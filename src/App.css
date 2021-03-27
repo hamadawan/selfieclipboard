@@ -15,7 +15,6 @@
   justify-content: center;
   padding: 5px 0px;
 }
-
 .paper{
   margin: 80px 20px;
   padding: 10px;
@@ -54,4 +53,11 @@
   right: 0;
   background: #3F51B5;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .graph{
+    margin: 60px 0px;
+    padding: 5px;
+  }
 }

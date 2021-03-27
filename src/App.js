@@ -44,16 +44,12 @@ function App() {
       <div className={classes.root}>
         <AppBar position="static" position="fixed">
           <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              {/* <MenuIcon /> */}
-            </IconButton>
             <Typography variant="h6" className={classes.title}>
               Web Application
             </Typography>
             <Button onClick={()=>history.push("/")} color="inherit" style={{fontWeight: location.pathname=="/" ? 'bold' :'' }}>Graphs</Button>
             <Button onClick={()=>history.push("/clipboard?q=abc123")} style={{fontWeight: location.pathname=="/clipboard" ? 'bold' :'' }} color="inherit">Clipboard</Button>
             <Button onClick={()=>history.push("/selfie")} style={{fontWeight: location.pathname=="selfie" ? 'bold' :'' }} color="inherit" className={classes.mr}>Selfie</Button>
-            
           </Toolbar>
         </AppBar>
           <Switch>
